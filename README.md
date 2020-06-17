@@ -1,4 +1,5 @@
 # vuedjango
+<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+Aplicación Diseñada con VUE.js
+>>>>>>> 22bb489c196ce9797f67e21d2734c323d1fb3f9c
