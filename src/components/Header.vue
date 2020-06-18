@@ -2,7 +2,7 @@
     <div>
         <b-navbar type="dark" variant="dark" class="mb-3">
             <b-navbar-brand>
-                Elements
+                My Project Mario
             </b-navbar-brand>
             
             <b-navbar-nav>

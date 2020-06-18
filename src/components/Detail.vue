@@ -8,6 +8,8 @@
                 <b-card-text>{{ element.description }}</b-card-text>
             </div>
         </b-card>
+        <br>
+        <h6>Created By Ing. Mario Alonso</h6>
     </div>
 </template>
 

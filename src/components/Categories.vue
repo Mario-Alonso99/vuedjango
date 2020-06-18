@@ -6,7 +6,7 @@
                 <router-link :to=" '/category/' + c.id + '/elements'">{{ c.title }}</router-link>
             </b-list-group-item>
         </b-list-group>
-    </div>
+    </div>    
 </template>
 
 <script>
