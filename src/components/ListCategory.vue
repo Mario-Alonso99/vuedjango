@@ -6,17 +6,15 @@
 
 <script>
 
-import ListDefault from '../partials/_ListDefault'
-export default {
+import ListDefault from '../partials/_ListDefault';
 
+export default {
     components:{
         ListDefault
     },
-
     created() {
         this.findAll();
     },
-
     data(){
         return {
             elements: []
@@ -26,7 +24,7 @@ export default {
         findAll: function(){
             fetch('http://127.0.0.1:8000/api/category/' + this.$route.params.id + '/elements/?format=json')
                 .then(res => res.json())
-                .then(res => this.elements = res)
+                .then(res => (this.elements = res));
         }
     },
     warch:{

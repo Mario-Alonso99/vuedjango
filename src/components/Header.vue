@@ -32,10 +32,9 @@
 <script>
 export default {
     created() {
-        this.findAllType()
-        this.findAllCategory()
+        this.findAllType();
+        this.findAllCategory();
     },
-
     data(){
         return {
             types: [],
@@ -46,12 +45,12 @@ export default {
         findAllType: function(){
             fetch('http://127.0.0.1:8000/api/type/?format=json')
                 .then(res => res.json())
-                .then(res => this.types = res)
+                .then(res => (this.types = res));
         },
          findAllCategory: function(){
             fetch('http://127.0.0.1:8000/api/category/?format=json')
                 .then(res => res.json())
-                .then(res => this.categories = res)
+                .then(res => (this.categories = res));
         }
     }
 };

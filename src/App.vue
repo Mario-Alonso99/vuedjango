@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header />
       <div class="container">
           <div class="row">
             <div class="col-md-4"> 
               <Categories/>
               <br>
-              <Types/>
+              <Types />
             </div>
             <div class="col-md-8"> 
               <router-view></router-view>
@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import Header from './components/Header'
-import Categories from './components/Categories'
-import Types from './components/Types'
+import Header from "./components/Header";
+import Categories from "./components/Categories";
+import Types from "./components/Types";
 export default {
   name: 'App',
   components: {
@@ -27,5 +27,5 @@ export default {
     Categories,
     Types
   }
-}
+};
 </script>

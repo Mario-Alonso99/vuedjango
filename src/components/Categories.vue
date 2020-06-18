@@ -12,9 +12,8 @@
 <script>
 export default {
     created() {
-        this.findAll()
+        this.findAll();
     },
-
     data(){
         return {
             categories: []
@@ -24,7 +23,7 @@ export default {
         findAll: function(){
             fetch('http://127.0.0.1:8000/api/category/?format=json')
                 .then(res => res.json())
-                .then(res => this.categories = res)
+                .then(res => (this.categories = res));
         }
     }
 };
