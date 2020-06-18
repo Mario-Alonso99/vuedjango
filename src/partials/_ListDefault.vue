@@ -1,6 +1,6 @@
 <template>
     <div class="mt-3 mt-md-0">      
-        <div v-for="e in elementsList" v-bind:key="e.id">
+        <div v-for="e in elementsList" v-bind:key="e.id" class="mt-2">
             <router-link class="card-link" :to=" '/detail/' + e.id ">
                 <b-card :header="e.title"
                 header-bg-variant="primary"
