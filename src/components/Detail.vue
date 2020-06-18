@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-3">
         <b-card>
             <h1>{{ element.title }}</h1>
             <div class="p-3" v-if="element.category">

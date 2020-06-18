@@ -27,7 +27,7 @@ export default {
                 .then(res => (this.elements = res));
         }
     },
-    warch:{
+    watch:{
         "$route.params.id": function(){
             console.log("Listado de Categorias");
             this.findAll();

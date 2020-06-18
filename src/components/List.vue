@@ -1,5 +1,5 @@
 <template>
-    <div>      
+    <div>   
         <ListDefault :elements-list = "elements" />
     </div>
 </template>
