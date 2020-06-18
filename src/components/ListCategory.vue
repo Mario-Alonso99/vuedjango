@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <ListDefault :elements-list = "elements" />
     </div>
 </template>
@@ -14,7 +14,7 @@ export default {
     },
 
     created() {
-        this.findAll()
+        this.findAll();
     },
 
     data(){
@@ -29,7 +29,13 @@ export default {
                 .then(res => this.elements = res)
         }
     },
-}
+    warch:{
+        "$route.params.id": function(){
+            console.log("Listado de Categorias");
+            this.findAll();
+        }
+    }
+};
 </script>
 
 <style>

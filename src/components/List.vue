@@ -1,5 +1,5 @@
 <template>
-    <div class="container">      
+    <div>      
         <ListDefault :elements-list = "elements" />
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
         ListDefault
     },
     created() {
-        this.findAll()
+        this.findAll();
     },
 
     data(){
